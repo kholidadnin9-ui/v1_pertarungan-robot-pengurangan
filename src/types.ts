@@ -1,7 +1,8 @@
-import imgBlue from './assets/robot-blue.png';
-import imgYellow from './assets/robot-yellow.png';
-import imgPink from './assets/robot-pink.png';
-import imgGreen from './assets/robot-green.png';
+
+const imgBlue = '/images/robot-blue.png';
+const imgYellow = '/images/robot-yellow.png';
+const imgPink = '/images/robot-pink.png';
+const imgGreen = '/images/robot-green.png';
 
 export type RobotColor = 'blue' | 'yellow' | 'pink' | 'green';
 
@@ -11,13 +12,13 @@ export interface RobotInfo {
   image: string;
   laserColor: string;
   laserGlow: string;
-  theme: string;      // gradient for UI
-  frame: string;      // frame border classes
-  glow: string;       // drop-shadow glow color
-  solid: string;      // solid accent color
-  /** gun muzzle position in % of the image box (measured from the artwork) */
+  theme: string;
+  frame: string;
+  glow: string;
+  solid: string;
+  /** Gun muzzle position in % of the image box */
   muzzle: { x: number; y: number };
-  /** chest core position (impact target) in % of the image box */
+  /** Chest core position (impact target) in % of the image box */
   core: { x: number; y: number };
 }
 
