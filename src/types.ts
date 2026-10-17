@@ -1,8 +1,8 @@
 
-const imgBlue = '/images/robot-blue.png';
-const imgYellow = '/images/robot-yellow.png';
-const imgPink = '/images/robot-pink.png';
-const imgGreen = '/images/robot-green.png';
+const imgBlue = `${import.meta.env.BASE_URL}images/robot-blue.png`;
+const imgYellow = `${import.meta.env.BASE_URL}images/robot-yellow.png`;
+const imgPink = `${import.meta.env.BASE_URL}images/robot-pink.png`;
+const imgGreen = `${import.meta.env.BASE_URL}images/robot-green.png`;
 
 export type RobotColor = 'blue' | 'yellow' | 'pink' | 'green';
 
